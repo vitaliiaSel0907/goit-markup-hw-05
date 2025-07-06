@@ -215,196 +215,7 @@ body {
             pointer-events: auto;
         }
     
-        /* ---------- modal window ---------- */
-        .modal {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 408px;
-            min-height: 584px;
-            padding: 72px 24px 24px 24px;
-            background-color: #fff;
-            border-radius: 4px;
-            transform: translate(-50%, -50%);
-            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    
-        /* ---------- close button ---------- */
-        .modal-close-btn {
-            position: absolute;
-            top: 24px;
-            right: 24px;
-            width: 24px;
-            height: 24px;
-            background-color: #e7e9fc;
-            border: none;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0;
-            cursor: pointer;
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    
-        .modal-close-btn:hover,
-        .modal-close-btn:focus {
-            background-color: #404bbf;
-            fill: #ffffff;
-        }
-    
-        .modal-close-icon {
-            stroke: #2e2f42;
-        }
-    
-        /* ---------- modal title ---------- */
-        .modal-title {
-            font-weight: 500;
-            font-size: 16px;
-            text-align: center;
-            color: #2e2f42;
-            margin-bottom: 16px;
-        }
-    
-        /* ---------- modal form ---------- */
-        .modal-form {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-    
-        /* ---------- labels ---------- */
-        .modal-label {
-            display: flex;
-            flex-direction: column;
-            gap: 4px;
-        }
-    
-        .modal-field-text {
-            font-size: 12px;
-            line-height: 1.17;
-            letter-spacing: 0.04em;
-            color: #8e8f99;
-        }
-    
-        /* ---------- input wrapper ---------- */
-        .modal-input-wrapper {
-            position: relative;
-        }
-    
-        .modal-input {
-            width: 100%;
-            height: 40px;
-            padding-left: 38px;
-            border: 1px solid rgba(46, 47, 66, 0.4);
-            border-radius: 4px;
-            background-color: transparent;
-            font-size: 14px;
-            outline: none;
-            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    
-        .modal-icon {
-            position: absolute;
-            left: 16px;
-            top: 50%;
-            transform: translateY(-50%);
-            fill: #2e2f42;
-            pointer-events: none;
-            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    
-        .modal-input:focus {
-            border-color: #4d5ae5;
-        }
-    
-        .modal-input:focus+.modal-icon {
-            fill: #4d5ae5;
-        }
-    
-        /* ---------- textarea ---------- */
-        .modal-textarea {
-            height: 120px;
-            resize: none;
-            padding: 8px 16px;
-            font-size: 14px;
-            border: 1px solid rgba(46, 47, 66, 0.4);
-            border-radius: 4px;
-            background-color: transparent;
-            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    
-        .modal-textarea:focus {
-            border-color: #4d5ae5;
-            outline: none;
-        }
-    
-        /* ---------- checkbox ---------- */
-        .modal-agreement {
-            display: flex;
-            align-items: center;
-            font-size: 12px;
-            line-height: 1.17;
-            letter-spacing: 0.04em;
-            color: #8e8f99;
-            margin-bottom: 24px;
-        }
-    
-        .modal-check-box {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            min-width: 16px;
-            height: 16px;
-            border: 1px solid rgba(46, 47, 66, 0.4);
-            border-radius: 2px;
-            margin-right: 8px;
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    
-        .modal-check:checked+.modal-check-box {
-            background-color: #404bbf;
-            border-color: #404bbf;
-        }
-    
-        .check-icon {
-            fill: #fff;
-            opacity: 0;
-            transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    
-        .modal-check:checked+.modal-check-box .check-icon {
-            opacity: 1;
-        }
-    
-        /* ---------- link ---------- */
-        .privacy-link {
-            color: #4d5ae5;
-            margin-left: 3px;
-        }
-    
-        /* ---------- submit btn ---------- */
-        .modal-submit-btn {
-            padding: 16px 32px;
-            min-width: 169px;
-            align-self: center;
-            border: none;
-            border-radius: 4px;
-            background-color: #4d5ae5;
-            color: #fff;
-            font-weight: 500;
-            font-size: 16px;
-            letter-spacing: 0.04em;
-            line-height: 1.5;
-            cursor: pointer;
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .modal-submit-btn:hover,
-        .modal-submit-btn:focus {
-            background-color: #404bbf; }
-
+       
         
      /*  Section 2 Features */
 
@@ -822,78 +633,303 @@ body {
     height: 24px;
     display: block; }
 
+
         /* Footer subscribe */
-        .footer-subscribe {
-            margin-left: auto;
-            max-width: 453px;
-            width: 100%;
-        }
+           /* Контейнер підписки */
+           .footer-subscribe {
+               margin-left: auto;
+               max-width: 453px;
+               width: 100%;
+           }
     
-        .footer-subscribe-title {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 1.5;
-            letter-spacing: 0.02em;
-            color: var(--color-white);
-            margin-bottom: 16px;
-        }
+           /* Заголовок Subscribe */
+           .footer-subscribe-title {
+               margin-bottom: 16px;
+               font-weight: 500;
+               font-size: 16px;
+               line-height: 1.5;
+               letter-spacing: 0.02em;
+               color: #ffffff;
+           }
     
-        .subscribe-form {
-            display: flex;
-            gap: 24px;
-        }
+           /* Форма підписки */
+           .subscribe-form {
+               display: flex;
+               gap: 24px;
+           }
     
-        .subscribe-label {
-            flex-grow: 1;
-        }
+           /* Контейнер для input */
+           .subscribe-label {
+               flex-grow: 1;
+           }
     
-        .subscribe-input {
-            width: 100%;
-            height: 40px;
-            padding-left: 16px;
-            border-radius: 4px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            background-color: transparent;
-            color: var(--color-white);
-            font-size: 14px;
-            line-height: 1.5;
-            letter-spacing: 0.02em;
-            outline: none;
-            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
+           /* Поле вводу email */
+           .subscribe-input {
+               width: 264px;
+               height: 40px;
+               padding-left: 16px;
+               border-radius: 4px;
+               border: 1px solid #ffffff;
+               background-color: transparent;
+               color: #ffffff;
+               font-size: 12px;
+               line-height: 2;
+               letter-spacing: 0.04em;
+               box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+               outline: none;
+               transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+           }
     
-        .subscribe-input::placeholder {
-            color: rgba(255, 255, 255, 0.6);
-        }
+           /* Колір placeholder */
+           .subscribe-input::placeholder {
+               color: #ffffff;
+              
+           }
     
-        .subscribe-input:focus {
-            border-color: var(--color-primary);
-        }
+           /* Фокус на input */
+           .subscribe-input:focus {
+               border-color: #4D5AE5;
+               /* Приклад активного кольору */
+           }
     
-        .subscribe-button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 16px;
-            min-width: 165px;
-            height: 40px;
-            padding: 8px 24px;
-            border: none;
-            border-radius: 4px;
-            background-color: var(--color-primary);
-            color: var(--color-white);
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 1.5;
-            letter-spacing: 0.04em;
-            cursor: pointer;
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
+           /* Кнопка підписки */
+           .subscribe-button {
+               min-width: 165px;
+               height: 40px;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               padding: 0 24px;  /* Відступи */
+               border: none;
+         
+               border-radius: 4px;
+            
+               background-color: #4D5AE5;
+          
+               color: #ffffff;
+              
+               font-family: "Roboto", sans-serif;
+             
+               font-weight: 500;
+              
+               font-size: 16px;
+            
+               line-height: 1.5;
+               letter-spacing: 0.04em;
+               cursor: pointer; 
+               transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+           }
     
-        .subscribe-button:hover,
-        .subscribe-button:focus {
-            background-color: var(--color-primary-hover);
-        }
+           /* Ховер та фокус кнопки */
+           .subscribe-button:hover,
+           .subscribe-button:focus {
+               background-color: #3b44c4;
+               /* Темніший відтінок для ефекту */
+           }
     
-        .subscribe-icon {
-            fill: var(--color-white);     }
+           /* Іконка всередині кнопки */
+           .subscribe-icon {
+               margin-left: 16px;
+               fill: #ffffff;
+           }
+               /* Для кольору іконки */
+
+
+
+                        /* Контейнер модального вікна */
+                        .modal-backdrop {
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background-color: rgba(46, 47, 66, 0.4);
+                            transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                            z-index: 999;
+                        }
+            
+                        /* Модальне вікно */
+                        .modal {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 408px;
+                            min-height: 584px;
+                            background: #fcfcfc;
+                            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+                            border-radius: 4px;
+                            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                            padding: 72px 24px 24px 24px;
+                        }
+            
+                        /* Кнопка закриття */
+                        .modal-close-btn {
+                            position: absolute;
+                            top: 24px;
+                            right: 24px;
+                            width: 24px;
+                            height: 24px;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: #e7e9fc;
+                            border: 1px solid rgba(0, 0, 0, 0.1);
+                            padding: 0;
+                            cursor: pointer;
+                            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                        }
+            
+                        .modal-close-btn:hover,
+                        .modal-close-btn:focus {
+                            background-color: #404bbf;
+                            border: none;
+                        }
+            
+                        .modal-close-icon {
+                            width: 8px;
+                            height: 8px;
+                            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                        }
+            
+                        .modal-close-btn:hover .modal-close-icon,
+                        .modal-close-btn:focus .modal-close-icon {
+                            fill: #ffffff;
+                        }
+            
+                        .modal-description {
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 1.5;
+                            text-align: center;
+                            letter-spacing: 0.02em;
+                            color: var(--color2, #2e2f42);
+                            margin-bottom: 16px;
+                        }
+            
+                        .modal-form-label {
+                            display: block;
+                            margin-bottom: 4px;
+                            font-size: 12px;
+                            line-height: 1.17;
+                            letter-spacing: 0.04em;
+                            color: var(--color3, #8e8f99);
+                        }
+            
+                        .modal-form-field {
+                            margin-bottom: 8px;
+                        }
+            
+                        .modal-form-input-wrapper {
+                            position: relative;
+                        }
+            
+                        .modal-form-input {
+                            width: 100%;
+                            height: 40px;
+                            border: 1px solid rgba(46, 47, 66, 0.4);
+                            border-radius: 4px;
+                            background-color: transparent;
+                            padding-left: 38px;
+                            outline: transparent;
+                            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                        }
+            
+                        .modal-form-input:focus {
+                            border-color: #4d5ae5;
+                        }
+            
+                        .modal-form-icon {
+                            position: absolute;
+                            top: 50%;
+                            left: 16px;
+                            transform: translateY(-50%);
+                            width: 18px;
+                            height: 24px;
+                            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                            fill: #2e2f42;
+                        }
+            
+                        .modal-form-input:focus+.modal-form-icon {
+                            fill: #4d5ae5;
+                        }
+            
+                        .modal-form-textarea-wrapper {
+                            margin-bottom: 16px;
+                        }
+            
+                        .modal-form-textarea {
+                            width: 100%;
+                            height: 120px;
+                            font-size: 12px;
+                            line-height: 1.17;
+                            letter-spacing: 0.04em;
+                            color: rgba(46, 47, 66, 0.4);
+                            border: 1px solid rgba(46, 47, 66, 0.4);
+                            border-radius: 4px;
+                            background-color: transparent;
+                            padding: 8px 16px;
+                            outline: transparent;
+                            resize: none;
+                            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                        }
+            
+                        .modal-form-textarea:focus {
+                            border-color: #4d5ae5;
+                        }
+            
+                        .modal-form-checkbox-wrapper {
+                            margin-bottom: 24px;
+                        }
+            
+                        .modal-form-checkbox-label {
+                            font-size: 12px;
+                            line-height: 1.17;
+                            letter-spacing: 0.04em;
+                            color: var(--color3, #8e8f99);
+                        }
+            
+                        .modal-form-checkbox-custom {
+                            width: 16px;
+                            height: 16px;
+                            border: 1px solid rgba(46, 47, 66, 0.4);
+                            border-radius: 2px;
+                            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            fill: transparent;
+                        }
+            
+                        input[type="checkbox"]:checked+.modal-form-checkbox-label>.modal-form-checkbox-custom {
+                            background-color: #404bbf;
+                            border: none;
+                            fill: #f4f4fd;
+                        }
+            
+                        .modal-form-checkbox-link {
+                            color: #4d5ae5;
+                        }
+            
+                        .modal-submit-btn {
+                            display: block;
+                            min-width: 169px;
+                            height: 56px;
+                            font-family: "Roboto", sans-serif;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 1.5;
+                            letter-spacing: 0.04em;
+                            color: #ffffff;
+                            cursor: pointer;
+                            background-color: #4d5ae5;
+                            border: none;
+                            margin: 0 auto;
+                            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                        }
+            
+                        .modal-submit-btn:hover,
+                        .modal-submit-btn:focus {
+                            background-color: #404bbf;
+                        }
