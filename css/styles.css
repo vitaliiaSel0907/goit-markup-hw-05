@@ -656,7 +656,7 @@ body {
 
 
 .subscribe-label {
-    position: relative;/
+    position: relative;
     display: inline-block;
 }
 
@@ -929,12 +929,12 @@ body {
     fill: #f4f4fd;
 }
 
-/* Лінк в лейблі */
+/* Лінк */
 .privacy-link {
     color: #4d5ae5;
 }
 
-/* Кнопка відправки */
+/* Кнопка и */
 .modal-submit-btn {
     display: block;
     min-width: 169px;
