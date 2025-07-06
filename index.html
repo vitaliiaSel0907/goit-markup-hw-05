@@ -424,22 +424,25 @@
                 </li>
             </ul>
         </div>
+
         <div class="footer-subscribe">
             <p class="footer-subscribe-title">Subscribe</p>
             <form class="subscribe-form">
-                <label class="subscribe-label">
-                    <input type="email" name="user-email" class="subscribe-input" placeholder="E-mail" required />
-                </label>
+                <label class="subscribe-label visually-hidden" for="subscribe-email">Email</label>
+                <input type="email" name="user-email" id="subscribe-email" class="subscribe-input" placeholder="E-mail"
+                    required />
                 <button type="submit" class="subscribe-button">
                     Subscribe
                     <svg class="subscribe-icon" width="24" height="24" aria-hidden="true" focusable="false">
                         <use href="./images/icons.svg#icon-send"></use>
                     </svg>
                 </button>
-            </form>   
-         </div>
-    </div>
-    </footer>
+            </form>
+        </div>
+        </div>
+        </footer>
+    
+
 
     <!-- Modal backdrop -->
     <div class="backdrop is-hidden">
