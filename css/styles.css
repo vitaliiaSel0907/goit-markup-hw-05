@@ -634,105 +634,99 @@ body {
     display: block; }
 
 
-        /* Footer subscribe */
-           /* Контейнер підписки */
-           .footer-subscribe {
-               margin-left: auto;
-               max-width: 453px;
-               width: 100%;
-           }
+        /* Footer subscribe container */
+        .footer-subscribe {
+            margin-left: auto;
+            max-width: 453px;
+            width: 100%;
+        }
     
-           /* Заголовок Subscribe */
-           .footer-subscribe-title {
-               margin-bottom: 16px;
-               font-weight: 500;
-               font-size: 16px;
-               line-height: 1.5;
-               letter-spacing: 0.02em;
-               color: #ffffff;
-           }
+        /* Заголовок Subscribe */
+        .footer-subscribe-title {
+            margin-bottom: 16px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: #ffffff;
+        }
     
-           /* Форма підписки */
-           .subscribe-form {
-               display: flex;
-               gap: 24px;
-           }
+        /* Форма підписки - flex row */
+        .subscribe-form {
+            display: flex;
+            gap: 24px;
+        }
     
-           /* Контейнер для input */
-           .subscribe-label {
-               flex-grow: 1;
-           }
+        /* Лейбл, що містить інпут */
+        .subscribe-label {
+            flex-grow: 1;
+        }
     
-           /* Поле вводу email */
-           .subscribe-input {
-               width: 264px;
-               height: 40px;
-               padding-left: 16px;
-               border-radius: 4px;
-               border: 1px solid #ffffff;
-               background-color: transparent;
-               color: #ffffff;
-               font-size: 12px;
-               line-height: 2;
-               letter-spacing: 0.04em;
-               box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-               outline: none;
-               transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-           }
+        /* Інпут email */
+        .subscribe-input {
+            width: 264px;
+            height: 40px;
+            padding-left: 16px;
+            border-radius: 4px;
+            border: 1px solid #ffffff;
+            background-color: transparent;
+            color: #ffffff;
+            font-size: 12px;
+            line-height: 2;
+            letter-spacing: 0.04em;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            outline: none;
+            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
     
-           /* Колір placeholder */
-           .subscribe-input::placeholder {
-               color: #ffffff;
-              
-           }
+        /* Колір плейсхолдера */
+        .subscribe-input::placeholder {
+            color: #ffffff;
+        }
     
-           /* Фокус на input */
-           .subscribe-input:focus {
-               border-color: #4D5AE5;
-               /* Приклад активного кольору */
-           }
+        /* Фокус інпута */
+        .subscribe-input:focus {
+            border-color: #4D5AE5;
+            /* або твій варіант var(--color-primary) */
+        }
     
-           /* Кнопка підписки */
-           .subscribe-button {
-               min-width: 165px;
-               height: 40px;
-               display: flex;
-               justify-content: center;
-               align-items: center;
-               padding: 0 24px;  /* Відступи */
-               border: none;
-         
-               border-radius: 4px;
-            
-               background-color: #4D5AE5;
-          
-               color: #ffffff;
-              
-               font-family: "Roboto", sans-serif;
-             
-               font-weight: 500;
-              
-               font-size: 16px;
-            
-               line-height: 1.5;
-               letter-spacing: 0.04em;
-               cursor: pointer; 
-               transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-           }
+        /* Кнопка підписки */
+        .subscribe-button {
+            min-width: 165px;
+            height: 40px;
+            padding: 8px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4D5AE5;
+            /* або var(--color-primary) */
+            color: #ffffff;
+            font-family: "Roboto", sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.5;
+            letter-spacing: 0.04em;
+            cursor: pointer;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
     
-           /* Ховер та фокус кнопки */
-           .subscribe-button:hover,
-           .subscribe-button:focus {
-               background-color: #3b44c4;
-               /* Темніший відтінок для ефекту */
-           }
+        /* Ховер та фокус кнопки */
+        .subscribe-button:hover,
+        .subscribe-button:focus {
+            background-color: #3c4bb5;
+            /* або твій варіант var(--color-primary-hover) */
+        }
     
-           /* Іконка всередині кнопки */
-           .subscribe-icon {
-               margin-left: 16px;
-               fill: #ffffff;
-           }
-               /* Для кольору іконки */
+        /* Іконка всередині кнопки */
+        .subscribe-icon {
+            width: 24px;
+            height: 24px;
+            margin-left: 16px;
+            fill: #ffffff;
+        }
 
 
 
