@@ -55,10 +55,11 @@
                 </button>
             </div>
         </section>
-        
-        <!-- Modal (спочатку приховане) -->
-        <div class="backdrop is-open" data-modal>
+
+        <!-- modal open -->
+        <div class="backdrop " data-modal>
             <div class="modal">
+
                 <!-- Кнопка закриття -->
                 <button type="button" class="modal-close-btn" data-modal-close>
                     <svg class="modal-close-icon" width="8" height="8">
@@ -497,7 +498,20 @@
                 </li>
             </ul>
         </div>
-
+        <div class="footer-subscribe">
+            <p class="footer-subscribe-title">Subscribe</p>
+            <form class="subscribe-form">
+                <label class="subscribe-label">
+                    <input type="email" name="user-email" class="subscribe-input" placeholder="E-mail" required />
+                </label>
+                <button type="submit" class="subscribe-button">
+                    Subscribe
+                    <svg class="subscribe-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-send"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
     </div>
     </footer>
 </body>
