@@ -428,17 +428,19 @@
         <div class="footer-subscribe">
             <p class="footer-subscribe-title">Subscribe</p>
             <form class="subscribe-form">
-                <label class="subscribe-label visually-hidden" for="subscribe-email">Email</label>
-                <input type="email" name="user-email" id="subscribe-email" class="subscribe-input" placeholder="E-mail"
-                    required />
+                <label class="subscribe-label" for="subscribe-email">
+                    <input type="email" name="user-email" id="subscribe-email" class="subscribe-input" placeholder="E-mail"
+                        required />
+                    <span class="subscribe-label-text">Email</span>
+                </label>
                 <button type="submit" class="subscribe-button">
                     Subscribe
                     <svg class="subscribe-icon" width="24" height="24" aria-hidden="true" focusable="false">
                         <use href="./images/icons.svg#icon-send"></use>
                     </svg>
                 </button>
-            </form>
-        </div>
+            </form>  
+          </div>
         </div>
         </footer>
     
@@ -502,7 +504,7 @@
                         value="true" />
                     <label class="modal-label-privacy" for="user-privacy">
                         <span class="custom-checkbox">
-                            <svg class="checkbox-icon" width="24" height="20">
+                            <svg class="checkbox-icon" width="10" height="8">
                                 <use href="./images/icons.svg#icon-checkmark"></use>
                             </svg>
                         </span>
